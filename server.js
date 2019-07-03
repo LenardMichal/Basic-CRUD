@@ -37,6 +37,13 @@ app.get('/', (req, res, next) => {
 })
 
 
+//error handelr
+app.use((req, res, next) => {
+    res.status(404)
+        .end('Sorry bad request!');
+})
+
+
 app.listen(PORT, (err) => {
     if(err) throw err;
     console.log('Server is listening on: ', PORT);

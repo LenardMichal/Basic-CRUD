@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const heroSchema = require('./hero.model');
+const heroSchema = require('./hero.schema');
 
 // heroSchema.statics = {
 //     create: (data, cb) => {
